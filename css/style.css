@@ -60,7 +60,7 @@ body.night{
     background-color:#333;
 }
 .content {
-    max-width:720px;
+    max-width:1000px;
     margin:0 auto;
     height:100%;
 }
@@ -503,6 +503,9 @@ body.night .notYou{
     margin:0;
     padding:20px 0;
     display:inline-block;
+}
+.loadingMore .spinner div{
+    margin-right: 1px;
 }
 @media (max-width: 720px) {
     .postReplies{
