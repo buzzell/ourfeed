@@ -428,6 +428,10 @@ $(function () {
                                     postListHtml += gThis.genPost(post);
                                 });
                                 $('.postList').append(postListHtml);
+                                $('.bigImg .mediaImg a img').on('load',function(){
+                                    $(this).siblings('.spinner').remove();
+                                    $(this).siblings('.domain').show();
+                                });
                                 $('.loadingMore').hide();
                                 gThis.loadMore(json.paging);
                             }
